@@ -1,0 +1,19 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "This project's goal is to practice Test-Driven Development by writing unit tests for different functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NestorNebula/testing-practice.git"
+  },
+  "author": "Noa Houssier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NestorNebula/testing-practice/issues"
+  },
+  "homepage": "https://github.com/NestorNebula/testing-practice#readme"
+}
