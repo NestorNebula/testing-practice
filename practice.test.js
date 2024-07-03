@@ -46,3 +46,9 @@ describe('reverseString', () => {
     expect(reverseString('twenty $ is enough!')).toMatch('!hguone si $ ytnewt');
   });
 });
+
+describe('calculator', () => {
+  test('add', () => {
+    expect(calculator.add(2, 1)).toBe(3);
+  });
+});
