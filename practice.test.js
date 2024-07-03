@@ -60,4 +60,16 @@ describe('calculator', () => {
   test('subtract with b being bigger than a', () => {
     expect(calculator.subtract(3, 12)).toBe(-9);
   });
+
+  test('divide', () => {
+    expect(calculator.divide(6, 2)).toBe(3);
+  });
+
+  test('divide and return floating point', () => {
+    expect(calculator.divide(3, 2)).toBe(1.5);
+  });
+
+  test('divide with b being bigger than a', () => {
+    expect(calculator.divide(16, 32)).toBe(0.5);
+  });
 });
