@@ -15,3 +15,11 @@ test('capitalize a string starting with a number', () => {
     '60 Seconds in a minute'
   );
 });
+
+test('capitalize a string starting with a space', () => {
+  expect(capitalize(' space')).toMatch(' Space');
+});
+
+test('capitalize a string starting with a special character', () => {
+  expect(capitalize('$dollar')).toMatch('$Dollar');
+});
