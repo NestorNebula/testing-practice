@@ -106,3 +106,23 @@ describe('caesarCipher', () => {
     expect(caesarCipher('secret')).toMatch('secret');
   });
 });
+
+describe('analyzeArray', () => {
+  test('analyse basis array', () => {
+    expect(analyzeArray([3, 0, 6])).toEqual({
+      average: 3,
+      min: 0,
+      max: 6,
+      length: 3,
+    });
+  });
+
+  test('analyse array with negative numbers', () => {
+    expect(analyzeArray([3, -4, 20, 1])).toEqual({
+      average: 5,
+      min: -4,
+      max: 20,
+      length: 4,
+    });
+  });
+});
