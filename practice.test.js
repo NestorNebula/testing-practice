@@ -126,4 +126,13 @@ describe('analyzeArray', () => {
       length: 4,
     });
   });
+
+  test('analyse array with only one element', () => {
+    expect(analyzeArray([1])).toEqual({
+      average: 1,
+      min: 1,
+      max: 1,
+      length: 1,
+    });
+  });
 });
