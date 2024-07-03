@@ -28,3 +28,7 @@ test('capitalize a string starting with a special character', () => {
 test('reverse basic string', () => {
   expect(reverseString('dark')).toMatch('krad');
 });
+
+test('reverse sentence', () => {
+  expect(reverseString('The cat is sleeping')).toMatch('gnipeels si tac ehT');
+});
