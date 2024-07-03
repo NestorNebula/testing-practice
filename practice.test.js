@@ -72,4 +72,12 @@ describe('calculator', () => {
   test('divide with b being bigger than a', () => {
     expect(calculator.divide(16, 32)).toBe(0.5);
   });
+
+  test('multiply', () => {
+    expect(calculator.multiply(3, 3)).toBe(9);
+  });
+
+  test('multiply by 0', () => {
+    expect(calculator.multiply(9, 0)).toBe(0);
+  });
 });
