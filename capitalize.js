@@ -1,4 +1,8 @@
 export function capitalize(string) {
-  const letter = string[0];
-  return string.replace(letter, letter.toUpperCase());
+  const regexp = /([A-Za-z])/;
+  for (let i = 0; i < string.length; i++) {
+    if (regexp.test(string[i])) {
+      return string.replace(string[i], string[i].toUpperCase());
+    }
+  }
 }
