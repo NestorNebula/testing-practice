@@ -9,3 +9,9 @@ test('capitalize sentence', () => {
     'There is a tree in the forest.'
   );
 });
+
+test('capitalize a string starting with a number', () => {
+  expect(capitalize('60 seconds in a minute')).toMatch(
+    '60 Seconds in a minute'
+  );
+});
