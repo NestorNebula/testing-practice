@@ -52,4 +52,12 @@ describe('calculator', () => {
   test('add', () => {
     expect(calculator.add(2, 1)).toBe(3);
   });
+
+  test('subtract', () => {
+    expect(calculator.subtract(2, 1)).toBe(1);
+  });
+
+  test('subtract with b being bigger than a', () => {
+    expect(calculator.subtract(3, 12)).toBe(-9);
+  });
 });
