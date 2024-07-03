@@ -32,3 +32,13 @@ test('reverse basic string', () => {
 test('reverse sentence', () => {
   expect(reverseString('The cat is sleeping')).toMatch('gnipeels si tac ehT');
 });
+
+test('reverse sentence with numbers', () => {
+  expect(reverseString('He has 20 dollars to buy a gift')).toMatch(
+    'tfig a yub ot srallod 02 sah eH'
+  );
+});
+
+test('reverse sentence with special characters', () => {
+  expect(reverseString('twenty $ is enough!')).toMatch('!hguone si $ ytnewt');
+});
