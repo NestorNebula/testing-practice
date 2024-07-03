@@ -1,5 +1,6 @@
 import { capitalize } from './capitalize';
 import { reverseString } from './reversestring';
+import { calculator } from './calculator';
 
 describe('capitalize', () => {
   test('capitalize basic string', () => {
