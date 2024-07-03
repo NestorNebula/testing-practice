@@ -1,4 +1,5 @@
 import { capitalize } from './capitalize';
+import { reverseString } from './reversestring';
 
 test('capitalize basic string', () => {
   expect(capitalize('light')).toMatch('Light');
@@ -22,4 +23,8 @@ test('capitalize a string starting with a space', () => {
 
 test('capitalize a string starting with a special character', () => {
   expect(capitalize('$dollar')).toMatch('$Dollar');
+});
+
+test('reverse basic string', () => {
+  expect(reverseString('dark')).toMatch('krad');
 });
