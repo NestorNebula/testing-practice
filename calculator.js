@@ -5,4 +5,7 @@ export const calculator = {
   subtract(a, b) {
     return a - b;
   },
+  divide(a, b) {
+    return a / b;
+  },
 };
