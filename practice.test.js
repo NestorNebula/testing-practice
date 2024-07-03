@@ -81,3 +81,13 @@ describe('calculator', () => {
     expect(calculator.multiply(9, 0)).toBe(0);
   });
 });
+
+describe('caesarCipher', () => {
+  test('cipher word', () => {
+    expect(caesarCipher('home', 3)).toBe('krph');
+  });
+
+  test('works with last letters', () => {
+    expect(caesarCipher('xyz', 6)).toBe('def');
+  });
+});
