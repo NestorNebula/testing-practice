@@ -2,6 +2,7 @@ import { capitalize } from './capitalize';
 import { reverseString } from './reversestring';
 import { calculator } from './calculator';
 import { caesarCipher } from './caesarcipher';
+import { analyzeArray } from './analyzearray';
 
 describe('capitalize', () => {
   test('capitalize basic string', () => {
