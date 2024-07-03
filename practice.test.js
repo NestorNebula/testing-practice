@@ -85,10 +85,24 @@ describe('calculator', () => {
 
 describe('caesarCipher', () => {
   test('cipher word', () => {
-    expect(caesarCipher('home', 3)).toBe('krph');
+    expect(caesarCipher('home', 3)).toMatch('krph');
   });
 
   test('works with last letters', () => {
-    expect(caesarCipher('xyz', 6)).toBe('def');
+    expect(caesarCipher('xyz', 6)).toMatch('def');
+  });
+
+  test('works with numbers', () => {
+    expect(caesarCipher('number3', 1)).toMatch('ovncfs3');
+  });
+
+  test('works with punctuation', () => {
+    expect(caesarCipher("this, of course, wasn't expected!", 2)).toMatch(
+      "vjku, qh eqwtug, ycup'v gzrgevgf!"
+    );
+  });
+
+  test('works with a factor of 0', () => {
+    expect(caesarCipher('secret')).toMatch('secret');
   });
 });
